@@ -4,7 +4,7 @@
  *
  * @package     Yireo_DisableLog
  * @author      Yireo (http://www.yireo.com/)
- * @copyright   Copyright (C) 2014 Yireo (http://www.yireo.com/)
+ * @copyright   Copyright 2015 Yireo (http://www.yireo.com/)
  * @license     Open Source License (OSL v3)
  */
 
@@ -44,7 +44,7 @@ class Yireo_DisableLog_Model_Rewrite_Log_Visitor extends Mage_Log_Model_Visitor
         return $rt;
     }
 
-    /*
+    /**
      * Trick to get an unique visitor-ID anyway
      */
     public function getId()
@@ -57,7 +57,7 @@ class Yireo_DisableLog_Model_Rewrite_Log_Visitor extends Mage_Log_Model_Visitor
         return abs(crc32(Mage::getModel('core/session')->getSessionId()));
     }
 
-    /*
+    /**
      * Trick to get an unique visitor-ID anyway
      */
     public function getVisitorId()

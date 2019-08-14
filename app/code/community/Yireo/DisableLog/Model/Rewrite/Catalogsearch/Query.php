@@ -4,7 +4,7 @@
  *
  * @package     Yireo_DisableLog
  * @author      Yireo (http://www.yireo.com/)
- * @copyright   Copyright (C) 2014 Yireo (http://www.yireo.com/)
+ * @copyright   Copyright 2015 Yireo (http://www.yireo.com/)
  * @license     Open Source License (OSL v3)
  */
 
@@ -13,7 +13,7 @@ class Yireo_DisableLog_Model_Rewrite_Catalogsearch_Query extends Mage_CatalogSea
     /**
      * Onject initialization
      */
-    protected function setPopularity($popularity)
+    public function setPopularity($popularity)
     {
         // If module is disabled
         if((bool)Mage::getStoreConfig('disablelog/settings/enabled') == false) {
