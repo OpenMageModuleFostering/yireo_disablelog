@@ -13,7 +13,7 @@
 
     <modules>
         <Yireo_DisableLog>
-            <version>0.0.2</version>
+            <version>0.0.4</version>
         </Yireo_DisableLog>
     </modules>
 
@@ -104,7 +104,7 @@
                             <children>
                                 <config>
                                     <children>
-                                        <disablelog translate="title" module="disabelog">
+                                        <disablelog translate="title" module="disablelog">
                                             <title>DisableLog Section</title>
                                         </disablelog>
                                     </children>
@@ -115,6 +115,18 @@
                 </admin>
             </resources>
         </acl>
+
+        <events>
+            <controller_action_predispatch>
+                <observers>
+                    <disablelog_controller_action_predispatch>
+                        <type>singleton</type>
+                        <class>Yireo_DisableLog_Model_Observer</class>
+                        <method>controllerActionPredispatch</method>
+                    </disablelog_controller_action_predispatch>
+                </observers>
+            </controller_action_predispatch>
+        </events>
     </adminhtml>
 
     <default>
