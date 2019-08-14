@@ -4,8 +4,8 @@
  *
  * @package     Yireo_DisableLog
  * @author      Yireo (http://www.yireo.com/)
- * @copyright   Copyright (c) 2013 Yireo (http://www.yireo.com/)
- * @license     Open Software License
+ * @copyright   Copyright (C) 2014 Yireo (http://www.yireo.com/)
+ * @license     Open Source License (OSL v3)
  */
 
 class Yireo_DisableLog_Model_Rewrite_Catalogsearch_Query extends Mage_CatalogSearch_Model_Query

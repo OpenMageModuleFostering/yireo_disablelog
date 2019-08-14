@@ -4,8 +4,8 @@
  *
  * @author Yireo
  * @package DisableLog
- * @copyright Copyright 2013
- * @license Open Software License
+ * @copyright Copyright 2014
+ * @license Open Source License (OSL v3)
  * @link http://www.yireo.com
  */
 
